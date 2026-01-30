@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
+
+.hero p {
+  margin: 15px 0 30px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.hero button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #ff0057;
+  color: white;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ff336f;
+  transform: scale(1.05);
+}
