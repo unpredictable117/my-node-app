@@ -391,3 +391,70 @@ form button{
     font-size:20px;
     cursor:pointer;
 }
+/* DOCTOR SECTION */
+
+.doctor{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:100px 80px;
+}
+
+.doctor-image{
+    width:45%;
+}
+
+.doctor-image img{
+    width:100%;
+    border-radius:30px;
+}
+
+.doctor-text{
+    width:55%;
+}
+
+.doctor-text h2{
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+.doctor-text p{
+    font-size:20px;
+    color:#d6d6d6;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.stats{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:#0a245f;
+    padding:30px;
+    border-radius:20px;
+    width:180px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:40px;
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:16px;
+}
+.doctor{
+    flex-direction:column;
+    padding:60px 20px;
+}
+
+.doctor-image,
+.doctor-text{
+    width:100%;
+}
