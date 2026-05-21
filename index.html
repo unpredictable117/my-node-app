@@ -6,6 +6,10 @@
   <title>REHABFIT Physiotherapy</title>
 
 <link rel="stylesheet" href="style.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+/>
 </head>
 
 <body>
@@ -46,7 +50,7 @@
   </section>
 
   <!-- SERVICES -->
-  <section class="services">
+  <section class="services" data-aos="fade-up">
 
     <h2>Our Services</h2>
 
@@ -72,8 +76,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="about">
-
+<section class="about" data-aos="fade-right">
     <div class="about-image">
       <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=1200&auto=format&fit=crop" alt="">
     </div>
@@ -90,20 +93,35 @@
 
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact">
+ <!-- CONTACT -->
+<section class="contact">
 
-    <h2>Book Your Consultation</h2>
+  <h2>Book Your Consultation</h2>
 
-    <p>Call us today and start your recovery journey.</p>
+  <p>Call us today and start your recovery journey.</p>
 
+  <a href="https://wa.me/91YOURNUMBER" target="_blank">
     <button>Contact Now</button>
+  </a>
 
-  </section>
+  <!-- GOOGLE MAP -->
+  <div class="map-container">
+
+    <iframe
+      src="https://www.google.com/maps?q=RehabFit&output=embed"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+  </div>
+
+</section>
   <!-- DOCTOR SECTION -->
 
-<section class="doctor">
-
+<section class="doctor" data-aos="fade-left">
   <div class="doctor-image">
     <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1200&auto=format&fit=crop" alt="">
   </div>
@@ -120,17 +138,17 @@
     <div class="stats">
 
       <div class="stat-box">
-        <h3>10+</h3>
+        <h3 class="counter">10</h3>
         <p>Years Experience</p>
       </div>
 
       <div class="stat-box">
-        <h3>5K+</h3>
+        <h3 class="counter">5000</h3>
         <p>Patients Treated</p>
       </div>
 
       <div class="stat-box">
-        <h3>98%</h3>
+        <h3 class="counter">98</h3>
         <p>Recovery Success</p>
       </div>
 
@@ -139,10 +157,26 @@
   </div>
 
 </section>
+<!-- GALLERY -->
+
+<section class="gallery">
+
+  <h2>Recovery Gallery</h2>
+
+  <div class="gallery-grid">
+
+    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop">
+
+    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1200&auto=format&fit=crop">
+
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop">
+
+  </div>
+
+</section>
   <!-- TESTIMONIALS -->
 
-<section class="testimonials">
-
+<section class="testimonials" data-aos="zoom-in">
   <h2>What Our Patients Say</h2>
 
   <div class="review-container">
@@ -176,8 +210,7 @@
 </section>
 <!-- APPOINTMENT FORM -->
 
-<section class="appointment">
-
+<section class="appointment" data-aos="fade-up">
   <h2>Book Appointment</h2>
 
   <form>
@@ -204,9 +237,37 @@
 
 <!-- WHATSAPP -->
 
-<a class="whatsapp" href="https://wa.me/8882097714">
+<a class="whatsapp" href="https://wa.me/91  8882097714">
   💬
 </a>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<script>
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    counter.innerText = '0';
+
+    const updateCounter = () => {
+        const target = +counter.getAttribute('data-target') || +counter.innerText;
+        const current = +counter.innerText;
+
+        const increment = target / 100;
+
+        if(current < target){
+            counter.innerText = `${Math.ceil(current + increment)}`;
+            setTimeout(updateCounter, 30);
+        }
+    }
+
+    updateCounter();
+});
+</script>
 </body>
 </html>

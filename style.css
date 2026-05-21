@@ -458,3 +458,51 @@ form button{
 .doctor-text{
     width:100%;
 }
+.map{
+    padding:100px 80px;
+}
+
+.map h2{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:40px;
+}
+
+.map iframe{
+    border-radius:25px;
+}
+
+/* MAP */
+
+.map-container{
+    margin-top:50px;
+    border-radius:25px;
+    overflow:hidden;
+}
+.gallery{
+    padding:100px 80px;
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-grid img{
+    width:100%;
+    border-radius:25px;
+    height:350px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
