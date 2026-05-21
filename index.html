@@ -18,6 +18,9 @@
   <header>
     <nav class="navbar">
       <h1 class="logo">REHABFIT</h1>
+      <div class="menu-toggle">
+  ☰
+</div>
 
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
@@ -231,8 +234,42 @@
 
 <!-- FOOTER -->
 
-<footer>
-  <p>© 2026 REHABFIT Physiotherapy Clinic. All Rights Reserved.</p>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h2>REHABFIT</h2>
+
+      <p>
+        Advanced physiotherapy and rehabilitation clinic focused on recovery,
+        mobility and pain-free living.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+
+      <p>📍 Your Clinic Location</p>
+      <p>📞 +91 88820 97714</p>
+      <p>✉ rehabfit@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 REHABFIT Physiotherapy Clinic. All Rights Reserved.
+  </div>
+
 </footer>
 
 <!-- WHATSAPP -->
@@ -268,6 +305,16 @@ counters.forEach(counter => {
 
     updateCounter();
 });
+</script>
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
 </script>
 </body>
 </html>
