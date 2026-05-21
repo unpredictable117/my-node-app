@@ -1,3 +1,5 @@
-document.querySelector("button").addEventListener("click", () => {
-  alert("Welcome to the Arena 🔥");
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  alert("Welcome to Unpredictable117 🚀");
 });
