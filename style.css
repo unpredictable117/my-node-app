@@ -662,3 +662,15 @@ form button{
 .card:hover i{
     transform:scale(1.2) rotate(5deg);
 }
+.footer-box a{
+    color:#d7d7d7;
+    text-decoration:none;
+    margin-bottom:12px;
+    display:block;
+    transition:0.3s;
+}
+
+.footer-box a:hover{
+    color:#3b82f6;
+    transform:translateX(5px);
+}
