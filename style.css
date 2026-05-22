@@ -254,15 +254,6 @@ body{
     font-size:18px;
 }
 
-/* FOOTER */
-
-footer{
-    background:#02112f;
-    padding:40px;
-    text-align:center;
-    color:#b6c2dd;
-}
-
 /* WHATSAPP BUTTON */
 
 .whatsapp{
@@ -604,4 +595,60 @@ form button{
 
 .whatsapp-float:hover{
     transform:scale(1.1);
+}
+/* FOOTER */
+
+.footer{
+    background:#02102b;
+    padding:80px 80px 30px;
+    margin-top:80px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    flex:1;
+    min-width:250px;
+}
+
+.footer-box h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.footer-box h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.footer-box p{
+    color:#d7d7d7;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.footer-box a{
+    display:block;
+    color:#d7d7d7;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:0.3s;
+}
+
+.footer-box a:hover{
+    color:#3b82f6;
+    transform:translateX(5px);
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.1);
+    color:#cfcfcf;
 }
