@@ -759,3 +759,9 @@ form button{
     z-index:999999;
     transition:0.1s;
 }
+/* ACTIVE NAVBAR */
+
+.nav-links a.active{
+    color:#60a5fa;
+    font-weight:bold;
+}
