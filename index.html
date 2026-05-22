@@ -17,6 +17,16 @@
 </head>
 
 <body>
+  <!-- LOADER -->
+
+<div id="loader">
+
+  <div class="spinner"></div>
+
+  <h2>REHABFIT</h2>
+
+</div>
+<div id="progress-bar"></div>
 
   <!-- NAVBAR -->
 <header>
@@ -242,6 +252,41 @@
   </div>
 
 </section>
+<!-- FAQ SECTION -->
+
+<section class="faq">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+
+    <div class="faq-box">
+      <h3>How many physiotherapy sessions are needed?</h3>
+
+      <p>
+        Treatment duration depends on injury severity and recovery goals.
+      </p>
+    </div>
+
+    <div class="faq-box">
+      <h3>Do you provide home visits?</h3>
+
+      <p>
+        Yes, REHABFIT provides home physiotherapy sessions for patients.
+      </p>
+    </div>
+
+    <div class="faq-box">
+      <h3>Can physiotherapy help avoid surgery?</h3>
+
+      <p>
+        In many cases, physiotherapy can reduce pain and improve mobility without surgery.
+      </p>
+    </div>
+
+  </div>
+
+</section>
 <!-- APPOINTMENT FORM -->
 
 <section class="appointment" data-aos="fade-up">
@@ -356,6 +401,32 @@ menuToggle.addEventListener("click", () => {
 >
   💬
 </a>
+<script>
+
+window.addEventListener("load", () => {
+
+  document.getElementById("loader").style.display = "none";
+
+});
+
+</script>
+<script>
+
+window.onscroll = () => {
+
+    let scrollTop = document.documentElement.scrollTop;
+
+    let height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    let scrolled = (scrollTop / height) * 100;
+
+    document.getElementById("progress-bar").style.width =
+        scrolled + "%";
+};
+
+</script>
 
 </body>
 </html>
