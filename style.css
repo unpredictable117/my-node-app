@@ -7,8 +7,8 @@
 }
 
 body{
-    background:#03163d;
-    color:white;
+    background:#f1f5f9;
+    color:#0f172a;
     overflow-x:hidden;
 }
 
@@ -22,15 +22,16 @@ body{
     justify-content:space-between;
     align-items:center;
     padding:25px 80px;
-    background:rgba(0,0,0,0.3);
+    background:rgba(255,255,255,0.85);
+    border-bottom:1px solid #dbeafe;
     backdrop-filter:blur(10px);
     z-index:1000;
 }
 
 .logo{
-    font-size:38px;
-    font-weight:bold;
-    color:#60a5fa;
+    height:70px;
+    width:auto;
+
 }
 
 .nav-links{
@@ -41,7 +42,7 @@ body{
 
 .nav-links a{
     text-decoration:none;
-    color:white;
+    color:#0f172a;
     font-size:18px;
     transition:0.3s;
 }
@@ -74,7 +75,7 @@ body{
 
 .hero-text p{
     font-size:22px;
-    color:#cfd7ea;
+    color:#475569;
     margin-bottom:30px;
     line-height:1.6;
 }
@@ -126,7 +127,9 @@ body{
 }
 
 .card{
-    background:#0a245f;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+border:1px solid #e2e8f0;
+    background:white;
     padding:40px;
     border-radius:25px;
     width:320px;
@@ -144,7 +147,7 @@ body{
 }
 
 .card p{
-    color:#d6d6d6;
+    color:#64748b;
     line-height:1.6;
 }
 
@@ -211,7 +214,8 @@ body{
 }
 
 .review{
-    background:#0a245f;
+    background:white;
+    color:#0f172a;
     padding:35px;
     border-radius:25px;
     width:320px;
@@ -364,7 +368,8 @@ textarea{
     border:none;
     border-radius:15px;
     font-size:18px;
-    background:#0a245f;
+    background:white;
+    color:#0f172a;
     color:white;
 }
 
@@ -424,7 +429,8 @@ form button{
 }
 
 .stat-box{
-    background:#0a245f;
+    background:white;
+    color:#0f172a;
     padding:30px;
     border-radius:20px;
     width:180px;
@@ -500,7 +506,7 @@ form button{
 /* PREMIUM FOOTER */
 
 .footer{
-    background:#02112f;
+    background:#0f172a;
     padding:80px 20px 30px;
 }
 
@@ -692,7 +698,8 @@ form button{
 }
 
 .faq-box{
-    background:#0a245f;
+    background:white;
+    color:#0f172a;
     padding:35px;
     border-radius:20px;
     transition:0.3s;
