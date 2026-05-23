@@ -130,18 +130,18 @@ section{
 }
 
 .card{
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-border:1px solid #e2e8f0;
-    background:white;
+    background:#dbe4ee;
     padding:40px;
     border-radius:25px;
     width:320px;
     transition:0.4s;
+    border:1px solid #cbd5e1;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
 }
 
 .card:hover{
     transform:translateY(-10px);
-    background:#12347d;
+    background:#cfd9e6;
 }
 
 .card h3{
@@ -222,11 +222,12 @@ transition:0.3s;
 }
 
 .review{
-    background:white;
+    background:#dbe4ee;
     color:#0f172a;
     padding:35px;
     border-radius:25px;
     width:320px;
+    border:1px solid #cbd5e1;
 }
 
 .review p{
@@ -254,7 +255,7 @@ transition:0.3s;
 .contact p{
     font-size:22px;
     margin-bottom:30px;
-    color:#d6d6d6;
+    color:#475569;
 }
 
 .contact button{
@@ -540,7 +541,7 @@ form button{
 }
 
 .footer-box p{
-    color:#d1d5db;
+    color:#cbd5e1;
     line-height:1.9;
     margin-bottom:12px;
 }
@@ -650,14 +651,14 @@ form button{
 }
 
 .footer-box p{
-    color:#d7d7d7;
+    color:#475569;
     line-height:1.8;
     margin-bottom:10px;
 }
 
 .footer-box a{
     display:block;
-    color:#d7d7d7;
+    color:#475569;
     text-decoration:none;
     margin-bottom:12px;
     transition:0.3s;
@@ -686,7 +687,7 @@ form button{
     transform:scale(1.2) rotate(5deg);
 }
 .footer-box a{
-    color:#d7d7d7;
+    color:#475569;
     text-decoration:none;
     margin-bottom:12px;
     display:block;
@@ -715,16 +716,17 @@ form button{
 }
 
 .faq-box{
-    background:white;
+    background:#dbe4ee;
     color:#0f172a;
     padding:35px;
     border-radius:20px;
     transition:0.3s;
+    border:1px solid #cbd5e1;
 }
 
 .faq-box:hover{
     transform:translateY(-5px);
-    background:#12347d;
+    background:#cfd9e6;
 }
 
 .faq-box h3{
@@ -733,7 +735,7 @@ form button{
 }
 
 .faq-box p{
-    color:#d6d6d6;
+    color:#475569;
     line-height:1.7;
 }
 /* LOADER */
@@ -788,4 +790,15 @@ form button{
 .nav-links a.active{
     color:#60a5fa;
     font-weight:bold;
+}
+.footer-logo{
+    width:220px;
+    height:auto;
+    margin-bottom:20px;
+    display:block;
+    filter:brightness(1.2);
+}
+.footer-logo:hover{
+    transform:scale(1.03);
+    transition:0.3s;
 }
