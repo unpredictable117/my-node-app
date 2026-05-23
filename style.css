@@ -48,6 +48,21 @@ section{
     color:#0f172a;
     font-size:18px;
     transition:0.3s;
+    position:relative;
+}
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#3b82f6;
+    transition:0.4s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
 }
 
 .nav-links a:hover{
@@ -97,6 +112,9 @@ section{
 .hero-text button:hover{
     transform:translateY(-5px);
     box-shadow:0 10px 30px rgba(59,130,246,0.4);
+}
+button:active{
+    transform:scale(0.96);
 }
 
 .hero-image{
@@ -509,14 +527,26 @@ form button{
     object-fit:cover;
     transition:0.4s;
 }
+.hero-image img,
+.about-image img,
+.doctor-image img,
+.gallery-grid img{
+    transition:0.5s;
+}
 
+.hero-image img:hover,
+.about-image img:hover,
+.doctor-image img:hover,
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
 .gallery-grid img:hover{
     transform:scale(1.05);
 }
 /* PREMIUM FOOTER */
 
 .footer{
-    background:#26a5e0;
+    background:#071739;
     padding:80px 80px 30px;
     margin-top:80px;
     color:white;
@@ -738,6 +768,22 @@ form button{
     color:#475569;
     line-height:1.7;
 }
+/* CARD HOVER EFFECTS */
+
+.card,
+.review,
+.faq-box,
+.stat-box{
+    transition:all 0.35s ease;
+}
+
+.card:hover,
+.review:hover,
+.faq-box:hover,
+.stat-box:hover{
+    transform:translateY(-8px);
+}
+
 /* LOADER */
 
 #loader{
@@ -801,4 +847,21 @@ form button{
 .footer-logo:hover{
     transform:scale(1.03);
     transition:0.3s;
+}
+/* PAGE TRANSITION */
+
+body{
+    animation:fadeInPage 0.8s ease;
+}
+
+@keyframes fadeInPage{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
